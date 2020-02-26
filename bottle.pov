@@ -14,13 +14,6 @@ light_source {
 
 
 /*
-cone {
-  <-3, 0, 0>, 5 , <-3, 10, 0>, 2
-  texture {
-    NBbeerbottle
-  }
-}
-
 cylinder {
   <-3, 10, 0>, <-3, 15, 0>, 2
   texture {

@@ -23,7 +23,7 @@ light_source{
 */
 
 camera {
-	location <0,40,-20>
+	location <0,20,0>
 	look_at <0, 0, 0>
 }
 
@@ -45,7 +45,7 @@ color rgb<1,1,1>
 	0, // sweep the following shape from here ...
     	3, // ... up through here
     	7, // the number of points making up the shape ...
-     	<3,6.5>, <-3,6.5>, <-7.85,0>, <-3, -6.5>, <3,-6.5>, <7.85,0>, <3,6.5>
+     	<2.65,4.5>, <-2.65,4.5>, <-4.98,0>, <-2.65, -4.5>, <2.65,-4.5>, <4.98,0>, <2.65,4.5>
       scale<0.5,0,0.5>
       translate<0,1,0>
     	pigment { Brown}
@@ -55,17 +55,17 @@ color rgb<1,1,1>
 	0, // sweep the following shape from here ...
     	3, // ... up through here
     	7, // the number of points making up the shape ...
-     	<3,6.5>, <-3,6.5>, <-6.5,0>, <-3, -6.5>, <3,-6.5>, <6.5,0>, <3,6.5>
+     	<2.55,4.5>, <-2.55,4.5>, <-5,0>, <-2.55, -4.5>, <2.55,-4.5>, <5,0>, <2.55,4.5>
      	scale<0.77,0,0.77>
     	pigment { Yellow}
 }
 
 #local triangule_first =  prism {
     0, // sweep the following shape from here ...
-    3.3, // ... up through here
+    4, // ... up through here
     3, // the number of points making up the shape ...
-   <0, -6.5> , <-6,6.5> , <6,6.5> 
-   translate<0,0,-2>
+   <0, -2.4> , <-3.64,4.75> , <3.64,4.75> 
+   translate<0,0,-2.5>
     pigment { Black}
 }
 
@@ -73,8 +73,8 @@ color rgb<1,1,1>
     0, // sweep the following shape from here ...
     4, // ... up through here
     3, // the number of points making up the shape ...
-   <0, -6.5> , <-6,6.5> , <6,6.5> 
-   translate<0,0,-2>
+   <0, -2.4> , <-3.64,4.75> , <3.64,4.75> 
+   translate<0,0,-2.5>
    rotate <180,0,180>
    pigment { Green}
 }
@@ -179,6 +179,4 @@ star_with_hexagone
 	object{hexagono_abajo}
 	
 	}
-
-
 

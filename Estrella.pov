@@ -23,7 +23,7 @@ light_source{
 */
 
 camera {
-	location <-0,6,-10>
+	location <-0,16,-0>
 	look_at <0, 0, 0>
 }
 
@@ -37,8 +37,8 @@ color rgb<1,1,1>
 	0, // sweep the following shape from here ...
     	3.9, // ... up through here
     	7, // the number of points making up the shape ...
-     	 <2.61,4.51>, <-2.61,4.51>, <-5,0>, <-2.66, -4.51>, <2.61,-4.51>, <5,0>, <2.61,4.51>
-     	scale<0.84,0,0.87>
+     	<2.67,4.46>, <-2.67,4.46>, <-5.04,0>, <-2.64, -4.47>, <2.64,-4.47>, <5.04,0>, <2.67,4.46>
+     	scale<0.83,0,0.87>
     	pigment { Red}
 }
 
@@ -56,7 +56,7 @@ color rgb<1,1,1>
 	0, // sweep the following shape from here ...
     	2, // ... up through here
     	7, // the number of points making up the shape ...
-      <2.61,4.51>, <-2.61,4.51>, <-5,0>, <-2.61, -4.51>, <2.61,-4.51>, <5,0>, <2.61,4.51>
+      <2.67,4.46>, <-2.67,4.46>, <-5.04,0>, <-2.64, -4.47>, <2.64,-4.47>, <5.04,0>, <2.67,4.46>
      	scale<0.69,0,0.69>
      	translate<0,1,0>
     	pigment { Yellow}

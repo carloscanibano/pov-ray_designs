@@ -9,13 +9,22 @@
 #local cone_cilinder_merge_end = difference{object{cone_start} object{cilinder_start}  }
 #local first_torus = torus{0.55, 0.55 pigment{Red} translate <0,-1.9,0>}
 #local second_torus = torus{0.55, 0.55 pigment{Red} translate <0,-0.85,0>}
-cilinder_start
-//cone_start
-cone_cilinder_merge_start
-//cilinder_cone_start
-cilinder_cone_end
-first_torus
-second_torus
+//cilinder_start
+//cone_start (no)
+//cone_cilinder_merge_start
+//cilinder_cone_start (no)
+//cilinder_cone_end
+//first_torus
+//second_torus
+
+#declare mortero = merge {
+    object{cilinder_start}
+    object{cone_cilinder_merge_start}
+    object{cilinder_cone_end}
+    object{first_torus}
+    object{second_torus}
+}
+
 camera {
 	location <0,0,-20>
 	look_at <0, 0, 0>

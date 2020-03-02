@@ -61,14 +61,14 @@ texture
     cone { <-3, 0, 0>, 5 , <-3, 10, 0>, 1.5 open }
     cylinder { <-3, 10, 0>, <-3, 13, 0>, 1.5 open } 
     cone { <-3, 13, 0>, 1.5, <-3, 16, 0>, 2.5 open }
-    texture { Glass }
+    texture { Glass3 }
 }
 
 #local empty_bottle = union {
     cone { <-3, 0, 0>, 4.8 , <-3, 10, 0>, 1.3 }
     cylinder { <-3, 10, 0>, <-3, 13, 0>, 1.3 open } 
     cone { <-3, 13, 0>, 1.3, <-3, 16, 0>, 2.3 open } 
-    texture { Glass }
+    texture { Glass3 }
 }
 
 #local round_bottle = merge {   
@@ -79,7 +79,7 @@ texture
       1)
     cylinder { <-3, 10, 0>, <-3, 13, 0>, 1.5 } 
     cone { <-3, 13, 0>, 1.5, <-3, 16, 0>, 2.5 open } 
-    texture { Glass }
+    texture { Glass3 }
 }
 
 #local empty_round_bottle = merge {   
@@ -90,11 +90,11 @@ texture
       1)
     cylinder { <-3, 10, 0>, <-3, 13, 0>, 1.3 open } 
     cone { <-3, 13, 0>, 1.3, <-3, 16, 0>, 2.3 open } 
-    texture { Glass }
+    texture { Glass3 }
 }
 
 
-difference { 
+#declare botella = difference { 
   object { round_bottle }
   object { empty_round_bottle }  
 }

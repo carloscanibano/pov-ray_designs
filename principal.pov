@@ -10,7 +10,7 @@
 
 camera {
 
-location<0,3,-15> look_at<0,2,0> // Main
+location<0,4,-15> look_at<0,0,0> // Main
 rotate<0,0,2>
 
 //location<0,10,0> look_at<0,0,0> // Submain
@@ -59,7 +59,7 @@ cylinder {
 
 object {
     botella
-	translate<0, 0, -33>
+	translate<0, 0.6, -33>
 	scale<0.2,0.2,0.2>
 }
 
@@ -80,8 +80,9 @@ object {
 
 object {
     star_final
-    translate<-7,0,-8.5>
+    translate<-12,0,-2>
     scale<0.5,0.5,0.5>
+    rotate<0,-43,0>
 }    
 
 object {

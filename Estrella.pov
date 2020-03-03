@@ -23,7 +23,7 @@ light_source{
 */
 
 camera {
-	location <0,10,-0>
+	location <0,12,-10>
 	look_at <0, 0, 0>
 }
 
@@ -35,7 +35,7 @@ color rgb<1,1,1>
 
 #local hexagone_out = prism {
 	0, // sweep the following shape from here ...
-    	3.9, // ... up through here
+    	8, // ... up through here
     	7, // the number of points making up the shape ...
      	<2.67,4.46>, <-2.67,4.46>, <-5.04,0>, <-2.64, -4.47>, <2.64,-4.47>, <5.04,0>, <2.67,4.46>
      	scale<0.83,0,0.87>
@@ -44,7 +44,7 @@ color rgb<1,1,1>
 
 #local hexagone_int = prism {
 	0, // sweep the following shape from here ...
-    	5., // ... up through here
+    	8, // ... up through here
     	7, // the number of points making up the shape ...
      	<2.67,4.46>, <-2.67,4.46>, <-5.04,0>, <-2.64, -4.47>, <2.64,-4.47>, <5.04,0>, <2.67,4.46>
       scale<0.49,0,0.49>
@@ -53,26 +53,26 @@ color rgb<1,1,1>
 
 #local hexagone_base = prism {
 	0, // sweep the following shape from here ...
-    	2, // ... up through here
+    	3.5, // ... up through here
     	7, // the number of points making up the shape ...
       <2.67,4.46>, <-2.67,4.46>, <-5.04,0>, <-2.64, -4.47>, <2.64,-4.47>, <5.04,0>, <2.67,4.46>
-     	scale<0.69,0,0.69>
+     	scale<0.63,0,0.63>
      	translate<0,1,0>
     	pigment { Yellow}
 }
 
-#local triangule_first =  prism {
+#local triangule_lower =  prism {
     0, // sweep the following shape from here ...
-    3.7, // ... up through here
+    5.5, // ... up through here
     3, // this number of points making up the shape ...
    <0, -2.05> , <-3.64,4.75> , <3.64,4.75> 
    translate<0,0,-2.56>
     pigment { Black}
 }
 
-#local triangule_second =  prism {
+#local triangule_higher =  prism {
     0, // sweep the following shape from here ...
-    4, // ... up through here
+    6, // ... up through here
     3, // the number of points making up the shape ...
    <0, -2.05> , <-3.64,4.75> , <3.64,4.75> 
    translate<0,0,-2.56>
@@ -81,8 +81,8 @@ color rgb<1,1,1>
 }
 
 #local star = merge{
-	object{triangule_first}
-	object{triangule_second}
+	object{triangule_higher}
+	object{triangule_lower}
 }
 
 #local star_intersect_hexagone = intersection {
@@ -97,7 +97,7 @@ color rgb<1,1,1>
  
 #local hexagone_base_empty = difference {
 	object{hexagone_base}
-	object{hexagone_int scale 1.1 translate<0,1.05,0>}
+	object{hexagone_int scale 1.01 translate<0,1.05,0>}
 }
 	
 #declare star_final = merge{
@@ -107,8 +107,8 @@ color rgb<1,1,1>
 //hexagone_out
 //hexagone_int
 //hexagone_base
-//triangule_first
-//triangule_second
+//triangule_lower
+//triangule_higher
 //hexagone_base_empty
 //star
 //star_intersect_hexagone

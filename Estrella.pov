@@ -109,11 +109,5 @@ color rgb<1,1,1>
 //star
 //star_intersect_hexagone
 //star_with_hexagone
-<<<<<<< HEAD
 //star_final
-=======
-star_final
->>>>>>> a0bad190414f2f11901f855151d2a35b68dc53d4
-  
-
 

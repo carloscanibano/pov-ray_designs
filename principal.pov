@@ -59,22 +59,22 @@ cylinder {
 
 object {
     botella
-	translate<0, 0.6, -33>
+	translate<0, 0.6, -37>
 	scale<0.2,0.2,0.2>
 }
 
 object {
     cuenco
-    translate<4.5,8,-15.5>
-    scale<0.4,0.4,0.4>
+    translate<3.2,9,-16>
+    scale<0.45,0.45,0.45>
     texture { Bright_Bronze }
 }
 
 object {
     mortero
-    translate<5,15,-33>
-    rotate<0,0,-50>
-    scale<0.20,0.20,0.20>
+    translate<-3,20,-50>
+    rotate<-3,-7.5,-50>
+    scale<0.15,0.15,0.15>
     texture { Cherry_Wood }
 }
 
@@ -87,7 +87,7 @@ object {
 
 object {
     final_ying_no_empty
-    translate<-7,10,0>
+    translate<-7.5,10,0>
     scale<0.6,0.6,0.6>
     rotate<-80,-12,0>
 }

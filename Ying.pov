@@ -72,22 +72,13 @@ pigment{Green}
 
 //final_ying_part_right
 
-
-<<<<<<< HEAD
 #declare final_ying_no_empty = merge {
-=======
-#local  final_ying_no_empty = merge {
->>>>>>> a0bad190414f2f11901f855151d2a35b68dc53d4
 	object{ying_middle}
 	object{final_ying_part_left}
 	object{final_ying_part_right}
 } 
 
-<<<<<<< HEAD
 //final_ying_no_empty
-=======
-final_ying_no_empty
->>>>>>> a0bad190414f2f11901f855151d2a35b68dc53d4
 
 #declare final_ying_empty = difference {
 	object {final_ying_no_empty}

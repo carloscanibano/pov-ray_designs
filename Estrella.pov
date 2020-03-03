@@ -23,7 +23,7 @@ light_source{
 */
 
 camera {
-	location <-0,16,-0>
+	location <0,10,-0>
 	look_at <0, 0, 0>
 }
 
@@ -44,11 +44,10 @@ color rgb<1,1,1>
 
 #local hexagone_int = prism {
 	0, // sweep the following shape from here ...
-    	3, // ... up through here
+    	5., // ... up through here
     	7, // the number of points making up the shape ...
      	<2.67,4.46>, <-2.67,4.46>, <-5.04,0>, <-2.64, -4.47>, <2.64,-4.47>, <5.04,0>, <2.67,4.46>
       scale<0.49,0,0.49>
-      translate<0,1,0>
     	pigment { Brown}
 }
 
@@ -93,19 +92,24 @@ color rgb<1,1,1>
 
 #local star_with_hexagone = difference {
  	object{star_intersect_hexagone}
- 	object{hexagone_int}
+ 	object{hexagone_int translate<0,-0.2,0>}
  }
  
+#local hexagone_base_empty = difference {
+	object{hexagone_base}
+	object{hexagone_int scale 1.1 translate<0,1.05,0>}
+}
+	
 #declare star_final = merge{
 	object{star_with_hexagone}
-	object{hexagone_base}
-	
+	object{hexagone_base_empty}
 	}
 //hexagone_out
 //hexagone_int
 //hexagone_base
 //triangule_first
 //triangule_second
+//hexagone_base_empty
 //star
 //star_intersect_hexagone
 //star_with_hexagone

@@ -3,7 +3,7 @@
  
 // Camara
 camera {  
- location <0,7,0>
+ location <0,-0.9,-15>
  look_at <0,0,0>
 }
 background {color White}
@@ -14,7 +14,7 @@ light_source{
 }
 
 #local circle_entire= cylinder{ 
-<0,0,0>,<0,2,0>,2
+<0,0,0>,<0,0.9,0>,2
 pigment{Green}
 }
 //circle_entire
@@ -32,7 +32,7 @@ pigment{Green}
 
 
 #local circle_down= cylinder{ 
-<-0.7,-0.5,0.4>,<-0.7,2.5,0.4>,1.21
+<-0.7,-0.5,0.4>,<-0.7,1.5,0.4>,1.21
 pigment{Green}
 }
 //circle_down
@@ -44,7 +44,7 @@ pigment{Green}
 //ying_middle
 
 #local circle_up_right= cylinder{ 
-<1.13,0,-0.38>,<1.13,2,-0.38> 0.85
+<1.13,0,-0.38>,<1.13,0.9,-0.38> 0.85
 pigment{Green}
 }
 
@@ -52,7 +52,7 @@ pigment{Green}
 //circle_up_right
 
 #local circle_up_left= cylinder{ 
-<-0.9,0,0>,<-0.9,2,0> 1.12
+<-0.9,0,0>,<-0.9,0.9,0> 1.12
 pigment{Green}
 }
 
@@ -78,7 +78,7 @@ pigment{Green}
 	object{final_ying_part_right}
 } 
 
-//final_ying_no_empty
+final_ying_no_empty
 
 #declare final_ying_empty = difference {
 	object {final_ying_no_empty}

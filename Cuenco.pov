@@ -28,7 +28,7 @@
 //base_bowl
 
 #local medium_sphere = sphere{<0,-6.06,0>  3.1 texture { Copper_Metal } }
-#local medium_box_up = box{<-5,-7,-5>, <5,0, 5>  texture { Copper_Metal } }
+#local medium_box_up = box{<-5,-6,-5>, <5,0, 5>  texture { Copper_Metal } }
 #local medium_box_down = box{<-4.5,-10,-4.5>, <4.5,-8.7, 4.5>  texture { Copper_Metal } }
 //medium_sphere
 //medium_box_down
@@ -47,7 +47,7 @@
 	texture { Copper_Metal }
 }
 //bowl_without_cone
-#local final_bowl = cone {<0,-7,0>,2.95, <0,-6.15,0>, 2.95 texture { Copper_Metal } } 
+#local final_bowl = cone {<0,-6,0>,3.1, <0,-5.4,0>, 3.1 texture { Copper_Metal } } 
 //final_bowl
 #local bowl_with_cone = merge{
 	object{base_bowl}
@@ -58,14 +58,14 @@
 //bowl_with_cone
 #declare cuenco = difference{
                 object{bowl_with_cone}
-                object{bowl_with_cone scale 0.98 translate<0,0.72,0>}
+                object{bowl_with_cone scale 0.98 translate<0,0.49,0>}
                 texture { Copper_Metal }
 }
-cuenco
+//cuenco
 
 background {color White}
 camera {
-	location <-0,4,-18>
+	location <-0,4,-20>
 	look_at <0, 0, 0>
 }
 light_source{

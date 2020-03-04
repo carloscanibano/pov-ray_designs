@@ -10,7 +10,7 @@
 
 camera {
 
-location<0,4,-15> look_at<0,0,0> // Main
+location<-2,4,-15> look_at<0,0,0> // Main     y=4, z=-15
 rotate<0,0,2>
 
 //location<0,10,0> look_at<0,0,0> // Submain
@@ -66,15 +66,18 @@ object {
 object {
     cuenco
     translate<3.2,9,-16>
-    scale<0.45,0.45,0.45>
-    texture { Bright_Bronze }
+    scale 0.48
+    texture { 
+        Bright_Bronze
+        finish {diffuse 0.1}
+    }
 }
 
 object {
     mortero
     translate<-3,20,-50>
     rotate<-3,-7.5,-50>
-    scale<0.15,0.15,0.15>
+    scale<0.2,0.2,0.2>
     texture { Cherry_Wood }
 }
 
@@ -89,7 +92,7 @@ object {
     final_ying_no_empty
     translate<-7.5,10,0>
     scale<0.6,0.6,0.6>
-    rotate<-80,-12,0>
+    rotate<-80,-12,-10>
 }
 
 background {

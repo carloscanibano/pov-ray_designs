@@ -3,7 +3,7 @@
  
 // Camara
 camera {  
- location <0,-0.9,-15>
+ location <0,-,-15>
  look_at <0,0,0>
 }
 background {color White}
@@ -78,7 +78,7 @@ pigment{Green}
 	object{final_ying_part_right}
 } 
 
-final_ying_no_empty
+//final_ying_no_empty
 
 #declare final_ying_empty = difference {
 	object {final_ying_no_empty}

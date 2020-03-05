@@ -10,7 +10,7 @@
 
 camera {
 
-location<0,2.2,-6> look_at<0,0.75,0> // Main     y=5.5, z=-15
+location<0,2.2,-6> look_at<0,0.75,0> // Main     y=2.2, z=-6
 rotate<0,0,0>
 
 //location<0,10,0> look_at<0,0,0> // Submain
@@ -59,14 +59,14 @@ cylinder {
 
 object {
     botella_final
-	translate<5.5, -12.75, 13.5>
-	scale<0.18,0.18,0.18>
+	translate<5.5, -14.75, 13.5>
+	scale<0.16,0.16,0.16>
 	//texture { Glass3 }
 }
 
 object {
     cuenco
-    translate<6.7,2.5,5>
+    translate<5.9,2.5,5.5>
     scale 0.35
 }
 

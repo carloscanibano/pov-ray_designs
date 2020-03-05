@@ -56,11 +56,11 @@
                 object{bowl_with_cone}
                 object{bowl_with_cone scale 0.98 translate<0,0.49,0>}
                 texture { 
-                    pigment { rgb<0.36,0.28,0.20> }
+                    pigment { rgb<0.85, 0.25, 0.08> }
                     finish {
                         metallic
                         ambient 0.1
-                        diffuse 0.3
+                        diffuse 0.01
                         specular 0.85
                         roughness 0.01
                         reflection 0.2

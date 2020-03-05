@@ -4,7 +4,7 @@
 
 
 camera {
-	location <0,7,-15>
+	location <0,15,0>
 	look_at <0, 0, 0>
 }
 
@@ -29,31 +29,20 @@ color rgb<1,1,1>
     	7, // the number of points making up the shape ...
      	<2.67,4.46>, <-2.67,4.46>, <-5.04,0>, <-2.64, -4.47>, <2.64,-4.47>, <5.04,0>, <2.67,4.46>
       scale<0.49,0,0.49>
-    	//pigment { Brown}
-    	//texture{Glass3}
-   	//pigment{Clear}
-   	//finish { reflection {0.2} ambient -0.1 diffuse 0.5 }
-   	//interior { ior 20 }
 }
 
 #local hexagone_base = prism {
 	0, // sweep the following shape from here ...
-    	3.5, // ... up through here
+    	3.8, // ... up through here
     	7, // the number of points making up the shape ...
       <2.67,4.46>, <-2.67,4.46>, <-5.04,0>, <-2.64, -4.47>, <2.64,-4.47>, <5.04,0>, <2.67,4.46>
      	scale<0.63,0,0.63>
      	translate<0,1,0>
-    	//pigment { Yellow}
-    	//normal {bumps 0.01 scale 0.004} 
-    	//texture{Glass3}
-  	//pigment{Clear}
-  	//finish { reflection {0.2} ambient -0.1 diffuse 0.5 }
-  	//interior { ior 20 }
 }
 
 #local triangule_lower =  prism {
     0, // sweep the following shape from here ...
-    5.5, // ... up through here
+    5.8, // ... up through here
     3, // this number of points making up the shape ...
    <0, -2.05> , <-3.64,4.75> , <3.64,4.75> 
    translate<0,0,-2.56>
@@ -61,7 +50,7 @@ color rgb<1,1,1>
 
 #local triangule_higher =  prism {
     0, // sweep the following shape from here ...
-    6, // ... up through here
+    6.5, // ... up through here
     3, // the number of points making up the shape ...
    <0, -2.05> , <-3.64,4.75> , <3.64,4.75> 
    translate<0,0,-2.56>
@@ -99,9 +88,10 @@ color rgb<1,1,1>
 	object{hexagone_base_empty}
 	pigment{Clear}
   	texture{Glass3}
-   	finish { reflection {0.15} ambient -0.05 diffuse 0.8 }
+   	finish { reflection {0.15} ambient -0.05 diffuse 0.65 }
    	normal {bumps 0.07 scale 0.15}
    	interior { ior 15 }
+   	
 }
 //hexagone_out
 //hexagone_int

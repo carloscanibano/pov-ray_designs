@@ -6,7 +6,7 @@ camera {
  location <0,8,0>
  look_at <0,0,0>
 }
-background {color White}
+background {color Brown}
 // Punto de luz
 light_source{
  <2,10, 2> 
@@ -85,19 +85,28 @@ light_source{
 
 #local ying_empty = difference {
 	object {final_ying_no_empty}
-	object {ying_border_extern}
-	pigment{color rgb<0.7, 0.96, 0.18>}
+	object {final_ying_no_empty   scale<0.88, 1.2, 0.67> translate<0.05,-0.17,-0.32>  rotate -10*y  }
+	pigment{color rgb<0.8, 0.96, 0.15>}
 }
 //ying_border_extern
 //ying_empty
 
-#local ying_border_intern = object{ying_border_extern  scale<0.97, 1.2, 0.84> translate<-0.0,-0.15,-0.18>  rotate -3*y}
+#local ying_border_intern = object{ying_border_extern  scale<0.97, 1.2, 0.72> translate<-0.02,-0.15,-0.25>  rotate -5*y}
 //ying_border_intern
 #local  ying_border = difference {
-	object{ying_border_extern}
+	object{final_ying_no_empty   scale<0.88, 1, 0.67> translate<0.05,0,-0.32>  rotate -10*y}
 	object{ying_border_intern}
 	pigment{Grey}
-	finish { reflection {0.14} }
+	finish {
+	   	ambient 0.3
+	    	brilliance 4
+	    	diffuse 0.4
+	    	metallic
+	    	specular 0.7
+	    	roughness 1/60
+	    	reflection 0.05
+	}
+
 	
 }
 //ying_border

@@ -15,21 +15,20 @@
             }
 
 */
-#local base_sphere = sphere{<0,-4.5,0>  4.5 texture { Copper_Metal }}
-#local base_box = box{<-5,-8.7, -5>, <5,3, 5> texture { Copper_Metal }}
+#local base_sphere = sphere{<0,-4.5,0>  4.5}
+#local base_box = box{<-5,-8.7, -5>, <5,3, 5>}
 //base_sphere
 //base_box
 
 #local base_bowl = difference{
      		object{base_sphere}
      		object{base_box translate<0,0,0>}
-     		texture { Copper_Metal }
 }
 //base_bowl
 
-#local medium_sphere = sphere{<0,-6.06,0>  3.1 texture { Copper_Metal } }
-#local medium_box_up = box{<-5,-6,-5>, <5,0, 5>  texture { Copper_Metal } }
-#local medium_box_down = box{<-4.5,-10,-4.5>, <4.5,-8.7, 4.5>  texture { Copper_Metal } }
+#local medium_sphere = sphere{<0,-6.06,0>  3.1}
+#local medium_box_up = box{<-5,-6,-5>, <5,0, 5>}
+#local medium_box_down = box{<-4.5,-10,-4.5>, <4.5,-8.7, 4.5>}
 //medium_sphere
 //medium_box_down
 //medium_box_up
@@ -38,28 +37,36 @@
 	object{medium_sphere}
 	object{medium_box_down}
 	object{medium_box_up}
-	texture { Copper_Metal }
 }
 //medium_bowl
 #local bowl_without_cone = merge{
 	object{base_bowl}
 	object{medium_bowl}
-	texture { Copper_Metal }
 }
 //bowl_without_cone
-#local final_bowl = cone {<0,-6,0>,3.1, <0,-5.4,0>, 3.1 texture { Copper_Metal } } 
+#local final_bowl = cone {<0,-6,0>,3.1, <0,-5.4,0>, 3.1} 
 //final_bowl
 #local bowl_with_cone = merge{
 	object{base_bowl}
 	object{medium_bowl}
 	object{final_bowl}
-	texture { Copper_Metal }
 }
 //bowl_with_cone
 #declare cuenco = difference{
                 object{bowl_with_cone}
                 object{bowl_with_cone scale 0.98 translate<0,0.49,0>}
-                texture { Copper_Metal }
+                texture { 
+                    pigment { rgb<0.36,0.28,0.20> }
+                    finish {
+                        metallic
+                        ambient 0.1
+                        diffuse 0.3
+                        specular 0.85
+                        roughness 0.01
+                        reflection 0.2
+                        brilliance 1.5
+                    }
+                }
 }
 //cuenco
 

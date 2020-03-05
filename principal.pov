@@ -11,6 +11,7 @@
 camera {
 
 location<0,2.2,-6> look_at<0,0.75,0> // Main     y=2.2, z=-6
+//location<0,10.2,-3> look_at<0,0.75,0> // Above
 rotate<0,0,0>
 
 //location<0,10,0> look_at<0,0,0> // Submain
@@ -70,30 +71,28 @@ object {
     scale 0.35
 }
 
-/*
+
 object {
     mortero
-    translate<-3,20,-50>
-    rotate<-3,-7.5,-50>
-    scale<0.2,0.2,0.2>
+    translate<16.2,0,13>
+    rotate<-18,3,-40>
+    scale <0.18,0.15,0.15>
 }
 
 
 object {
-    star_final
-    translate<-4,-2,3>
-    scale 0.5
+    star
+    translate<-4.7,-6.7,11.6>
+    scale 0.35
     rotate<0,0,0>
 }
-  
 
 object {
-    final_ying_no_empty
-    translate<-3,5,2>
-    scale 0.65
-    rotate<0,0,0>
-}
-*/  
+    ying
+    translate<-4,-5.5,-3>
+    scale 0.4
+    rotate<-80,0,0>
+}  
 
 background {
   color rgb<0.75,0.75,0.1>

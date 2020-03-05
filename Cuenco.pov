@@ -61,10 +61,10 @@
                         metallic
                         ambient 0.1
                         diffuse 0.01
-                        specular 0.85
+                        specular 0.5
                         roughness 0.01
-                        reflection 0.2
-                        brilliance 1.5
+                        reflection 0.05
+                        brilliance 0.5
                     }
                 }
 }

@@ -81,12 +81,12 @@ light_source{
 
 //final_ying_no_empty
 
-#local ying_border_extern = object {final_ying_no_empty   scale<0.88, 1.2, 0.74> translate<0.05,-0.15,-0.32>  rotate -10*y  }
+#local ying_border_extern = object {final_ying_no_empty   scale<0.88, 1.2, 0.74> translate<0.05,-0.17,-0.32>  rotate -10*y  }
 
 #local ying_empty = difference {
 	object {final_ying_no_empty}
 	object {ying_border_extern}
-	pigment{Green}
+	pigment{color rgb<0.7, 0.96, 0.18>}
 }
 //ying_border_extern
 //ying_empty
@@ -97,6 +97,8 @@ light_source{
 	object{ying_border_extern}
 	object{ying_border_intern}
 	pigment{Grey}
+	finish { reflection {0.14} }
+	
 }
 //ying_border
 #declare ying = merge {

@@ -106,7 +106,7 @@ light_source{
 	object{ying_border}
 }
 
-ying
+//ying
 
 
 

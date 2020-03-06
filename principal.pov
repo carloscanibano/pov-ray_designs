@@ -76,7 +76,7 @@ object {
     mortero
     translate<11,6,16>
     rotate<-0,13,-48>
-    scale <0.2,0.15,0.15>
+    scale <0.19,0.15,0.15>
 }
 
 

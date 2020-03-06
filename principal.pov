@@ -11,7 +11,8 @@
 camera {
 
 location<0,2.2,-6> look_at<0,0.75,0> // Main     y=2.2, z=-6
-//location<-0,10.2,0> look_at<0,0.75,0> // Above
+//location<-6,-2,-4> look_at<0,0.75,0> // see  bowl up 
+//location<-0,10,0> look_at<0,0.75,0> // Above
 rotate<0,0,0>
 
 //location<0,10,0> look_at<0,0,0> // Submain
@@ -67,15 +68,15 @@ object {
 
 object {
     cuenco
-    translate<5.9,2.5,5.5>
+    translate<5.9,2.2,5.5>
     scale 0.35
 }
 
 
 object {
     mortero
-    translate<11,6,16>
-    rotate<-0,13,-48>
+    translate<12.3,1.45,15.5>
+    rotate<-20,13,-53>
     scale <0.19,0.15,0.15>
 }
 

@@ -11,7 +11,7 @@
 camera {
 
 location<-0,1,-5.5> look_at<0,0.75,0> // Main     y=1, z=-5.5
-//location<-6,-2,-4> look_at<0,0.75,0> // see  bowl up 
+//location<-7,-2,4> look_at<0,0.75,0> // see  bowl up 
 //location<-0,10,0> look_at<0,0.75,0> // Above
 rotate<0,0,0>
 
@@ -57,9 +57,10 @@ cylinder {
 // Pared
 //plane{z, radio_mesa + 1.5 pigment{color rgb<1,1,0.5>}}
 union {
+
     object {
         botella_final
-    	translate<5.5, -14.75, 13.5>
+    	translate<5.7, -14.75, 13.5>
     	scale<0.16,0.16,0.16>
     	//texture { Glass3 }
     }
@@ -73,8 +74,8 @@ union {
     
     object {
         mortero
-        translate<12.3,1.45,15.5>
-        rotate<-20,13,-53>
+        translate<12,1.45,15.5>
+        rotate<-20,13,-52>
         scale <0.19,0.15,0.15>
     }
     

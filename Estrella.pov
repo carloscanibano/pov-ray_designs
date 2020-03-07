@@ -25,7 +25,7 @@ color rgb<1,1,1>
 
 #local hexagone_int = prism {
 	0, // sweep the following shape from here ...
-    	8, // ... up through here
+    	8.6, // ... up through here
     	7, // the number of points making up the shape ...
      	<2.67,4.46>, <-2.67,4.46>, <-5.04,0>, <-2.64, -4.47>, <2.64,-4.47>, <5.04,0>, <2.67,4.46>
       scale<0.49,0,0.49>
@@ -33,7 +33,7 @@ color rgb<1,1,1>
 
 #local hexagone_base = prism {
 	0, // sweep the following shape from here ...
-    	3.8, // ... up through here
+    	4.1, // ... up through here
     	7, // the number of points making up the shape ...
       <2.67,4.46>, <-2.67,4.46>, <-5.04,0>, <-2.64, -4.47>, <2.64,-4.47>, <5.04,0>, <2.67,4.46>
      	scale<0.63,0,0.63>
@@ -42,7 +42,7 @@ color rgb<1,1,1>
 
 #local triangule_lower =  prism {
     0, // sweep the following shape from here ...
-    5.8, // ... up through here
+    6.1, // ... up through here
     3, // this number of points making up the shape ...
    <0, -2.05> , <-3.64,4.75> , <3.64,4.75> 
    translate<0,0,-2.56>
@@ -50,7 +50,7 @@ color rgb<1,1,1>
 
 #local triangule_higher =  prism {
     0, // sweep the following shape from here ...
-    6.5, // ... up through here
+    7, // ... up through here
     3, // the number of points making up the shape ...
    <0, -2.05> , <-3.64,4.75> , <3.64,4.75> 
    translate<0,0,-2.56>

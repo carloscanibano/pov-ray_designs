@@ -1,5 +1,6 @@
 #include"colors.inc"      
 #include"textures.inc"
+#include"metals.inc"
  
 // Camara
 camera {  
@@ -86,7 +87,7 @@ light_source{
 #local ying_empty = difference {
 	object {final_ying_no_empty}
 	object {final_ying_no_empty   scale<0.88, 1.2, 0.67> translate<0.05,-0.17,-0.32>  rotate -10*y  }
-	pigment{color rgb<0.8, 0.96, 0.15>}
+	pigment{color rgb<0.67, 0.86, 0.07>}
 }
 //ying_border_extern
 //ying_empty
@@ -96,15 +97,15 @@ light_source{
 #local  ying_border = difference {
 	object{final_ying_no_empty   scale<0.88, 1, 0.67> translate<0.05,0,-0.32>  rotate -10*y}
 	object{ying_border_intern}
-	pigment{Grey}
+	pigment{P_Silver2}
 	finish {
-	   	ambient 0.3
-	    	brilliance 4
-	    	diffuse 0.4
+	   	ambient 0.2
+	    	brilliance 7
+	    	diffuse 0.6
 	    	metallic
-	    	specular 0.7
-	    	roughness 1/60
-	    	reflection 0.05
+	    	specular 0.3
+	    	roughness 1/80
+	    	reflection 0.1
 	}
 
 	
